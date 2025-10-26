@@ -400,3 +400,40 @@ section {
     width: 100%;
     border-radius: 8px;
 }
+.profile-image-wrapper {
+    width: 180px; /* Tamaño del contenedor */
+    height: 180px;
+    border-radius: 50%; /* Para que sea circular */
+    overflow: hidden; /* Recorta la imagen para que quepa en el círculo */
+    margin: 0 auto 2rem auto; /* Centra y añade espacio debajo */
+    border: 4px solid var(--color-accent); /* Borde de color acento */
+    box-shadow: 0 0 0 8px rgba(0, 168, 255, 0.2); /* Sombra exterior sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image-wrapper:hover {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    box-shadow: 0 0 0 12px rgba(0, 168, 255, 0.3); /* Sombra un poco más grande */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el círculo sin distorsionarse */
+    object-position: center; /* Centra la imagen dentro del círculo */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .profile-image-wrapper {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1.5rem;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
