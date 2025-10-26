@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Gibran Hernández</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background: #003b88;
+      text-align: center;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .project {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .project img {
+      width: 100%;
+      max-width: 300px;
+      object-fit: cover;
+    }
+    .project-info {
+      flex: 1;
+      padding: 1rem;
+    }
+    .project-info h3 {
+      margin-top: 0;
+      color: #004aad;
+    }
+    a {
+      color: #004aad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #004aad;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gibran Hernández</h1>
+    <p>Estudiante de Mecatrónica | Proyectos con Python, Robótica y Automatización</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Sobre mí</h2>
+    <p>¡Hola! Soy Gibran Hernández, estudiante de ingeniería mecatrónica apasionado por la programación, el diseño de sistemas automatizados y el desarrollo de proyectos con Python. En esta página comparto algunos de mis trabajos más destacados relacionados con la robótica, visión artificial y control embebido.</p>
+    <p>Explora mis proyectos en la sección superior para conocer más detalles.</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Mis Proyectos</h2>
+
+    <div class="project">
+      <img src="imagenes/proyecto1.jpg" alt="Proyecto 1">
+      <div class="project-info">
+        <h3>Clasificador de objetos con Python</h3>
+        <p>Sistema basado en visión artificial y sensores, desarrollado con OpenCV y controlado desde un ESP32.</p>
+        <p><a href="https://github.com/tuusuario/proyecto1" target="_blank">Ver en GitHub</a></p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
+      <div class="project-info">
+        <h3>Robot de limpieza de paneles solares</h3>
+        <p>Robot autónomo con control por Raspberry Pi 5 y arquitectura distribuida.</p>
+        <p><a href="https://github.com/tuusuario/proyecto2" target="_blank">Ver en GitHub</a></p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📧 <a href="mailto:gibran@example.com">gibran@example.com</a></p>
+    <p>🌐 <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Gibran Hernández | Portafolio Personal</p>
+  </footer>
+</body>
+</html>
