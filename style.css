@@ -437,3 +437,17 @@ section {
         font-size: 1.2rem;
     }
 }
+.nav-logo {
+    display: flex; /* Esto pone la imagen y el texto uno al lado del otro */
+    align-items: center; /* Esto los centra verticalmente */
+    gap: 0.75rem; /* Espacio entre la foto y tu nombre */
+    /* El resto de estilos (font-size, color, etc.) se heredan */
+}
+
+.nav-profile-pic {
+    width: 40px; /* Tamaño pequeño para la barra */
+    height: 40px;
+    border-radius: 50%; /* La hace redonda */
+    object-fit: cover; /* Evita que la imagen se distorsione */
+    border: 2px solid var(--color-accent); /* Borde opcional */
+}
