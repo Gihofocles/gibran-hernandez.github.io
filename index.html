@@ -1,130 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio de Gibran Hernández</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #333;
-    }
-    header {
-      background: #004aad;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      background: #003b88;
-      text-align: center;
-      padding: 0.8rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .project {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .project img {
-      width: 100%;
-      max-width: 300px;
-      object-fit: cover;
-    }
-    .project-info {
-      flex: 1;
-      padding: 1rem;
-    }
-    .project-info h3 {
-      margin-top: 0;
-      color: #004aad;
-    }
-    a {
-      color: #004aad;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #004aad;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre - Portafolio de Tecnología</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Gibran Hernández Orozc</h1>
-    <p>Estudiante de Mecatrónica | Proyectos con Python, Robótica y Automatización</p>
-  </header>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">TuNombre.dev</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="inicio">
-    <h2>Sobre mí</h2>
-    <p>¡Hola! Soy Gibran Hernández, estudiante de ingeniería mecatrónica apasionado por la programación, el diseño de sistemas automatizados y el desarrollo de proyectos con Python. En esta página comparto algunos de mis trabajos más destacados relacionados con la robótica, visión artificial y control embebido.</p>
-    <p>Explora mis proyectos en la sección superior para conocer más detalles.</p>
-  </section>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hola, soy [Tu Nombre]</h1>
+                <p class="hero-subtitle">Desarrollador de Software | Entusiasta de la IA | Creador de Soluciones</p>
+                <p class="hero-description">
+                    Apasionado por construir aplicaciones eficientes y modernas. 
+                    Aquí puedes ver algunos de los proyectos en los que he trabajado.
+                </p>
+                <a href="#proyectos" class="cta-button">Ver mis proyectos</a>
+            </div>
+        </section>
 
-  <section id="proyectos">
-    <h2>Mis Proyectos</h2>
+        <section id="proyectos" class="projects-section">
+            <h2>Mis Proyectos</h2>
+            <div class="project-grid">
 
-    <div class="project">
-      <img src="imagenes/proyecto1.jpg" alt="Proyecto 1">
-      <div class="project-info">
-        <h3>Clasificador de objetos con Python</h3>
-        <p>Sistema basado en visión artificial y sensores, desarrollado con OpenCV y controlado desde un ESP32.</p>
-        <p><a href="https://github.com/tuusuario/proyecto1" target="_blank">Ver en GitHub</a></p>
-      </div>
-    </div>
+                <article class="project-card">
+                    <a href="#" class="project-link"> <img src="https://via.placeholder.com/600x400/333/fff?text=Imagen+Proyecto+1" alt="Descripción del Proyecto 1" class="project-image">
+                    </a>
+                    <div class="project-content">
+                        <h3 class="project-title">Nombre del Proyecto 1</h3>
+                        <p class="project-description">
+                            Una breve descripción de lo que hace este proyecto, el problema que resuelve y el resultado principal.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-button">Ver Demo</a>
+                            <a href="#" target="_blank" class="project-button secondary">Código en GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <a href="#" class="project-link">
+                        <img src="https://via.placeholder.com/600x400/333/fff?text=Imagen+Proyecto+2" alt="Descripción del Proyecto 2" class="project-image">
+                    </a>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Control de Inventario</h3>
+                        <p class="project-description">
+                            Implementación de un sistema backend para gestionar inventarios usando Python y una base de datos SQL.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-button secondary">Código en GitHub</a>
+                        </div>
+                    </div>
+                </article>
 
-    <div class="project">
-      <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
-      <div class="project-info">
-        <h3>Robot de limpieza de paneles solares</h3>
-        <p>Robot autónomo con control por Raspberry Pi 5 y arquitectura distribuida.</p>
-        <p><a href="https://github.com/tuusuario/proyecto2" target="_blank">Ver en GitHub</a></p>
-      </div>
-    </div>
+                <article class="project-card">
+                    <a href="#" class="project-link">
+                        <img src="https://via.placeholder.com/600x400/333/fff?text=Imagen+Proyecto+3" alt="Descripción del Proyecto 3" class="project-image">
+                    </a>
+                    <div class="project-content">
+                        <h3 class="project-title">App de Visualización de Datos</h3>
+                        <p class="project-description">
+                            Dashboard interactivo construido con D3.js para visualizar patrones en un gran conjunto de datos.
+                        </p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>D3.js</span>
+                            <span>CSS Grid</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-button">Ver Demo</a>
+                            <a href="#" target="_blank" class="project-button secondary">Código en GitHub</a>
+                        </div>
+                    </div>
+                </article>
 
-  </section>
+            </div>
+        </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📧 <a href="mailto:gibran@example.com">gibran@example.com</a></p>
-    <p>🌐 <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
-  </section>
+        <section id="contacto" class="contact-section">
+            <h2>Hablemos</h2>
+            <p>Estoy abierto a nuevas oportunidades y colaboraciones. ¡No dudes en contactarme!</p>
+            <a href="mailto:tuemail@dominio.com" class="cta-button">Enviar un email</a>
+            </section>
+    </main>
 
-  <footer>
-    <p>© 2025 Gibran Hernández | Portafolio Personal</p>
-  </footer>
+    <footer class="footer">
+        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,272 @@
+/* ======== VARIABLES CSS (Paleta de colores) ======== */
+:root {
+    --color-bg: #121212;          /* Negro oscuro para el fondo */
+    --color-bg-secondary: #1E1E1E; /* Un gris oscuro para las tarjetas */
+    --color-text-primary: #E0E0E0; /* Texto principal (casi blanco) */
+    --color-text-secondary: #B3B3B3; /* Texto secundario (gris claro) */
+    --color-accent: #00A8FF;       /* Un acento azul brillante */
+    --color-accent-hover: #007BFF; /* Acento para hover */
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* ======== ESTILOS GLOBALES ======== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces */
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ======== ENCABEZADO Y NAVEGACIÓN ======== */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(30, 30, 30, 0.8); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto "glass" moderno */
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--color-text-primary);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-accent);
+}
+
+/* ======== SECCIÓN HERO ======== */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 8rem; /* Para compensar el header fijo */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: #FFFFFF;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px; /* Botón "píldora" */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-3px);
+}
+
+/* ======== SECCIÓN DE PROYECTOS ======== */
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.project-grid {
+    display: grid;
+    /* * Crea columnas automáticas:
+     * - Mínimo de 320px de ancho.
+     * - Máximo de 1fr (ocupa el espacio disponible).
+     * Esto lo hace totalmente responsive.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--color-bg-secondary);
+    border-radius: 12px;
+    overflow: hidden; /* Para que la imagen respete los bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Para la animación de entrada */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* La clase .visible la añade el JavaScript */
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 168, 255, 0.2); /* Sombra de color acento */
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio */
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags span {
+    background-color: rgba(0, 168, 255, 0.1);
+    color: var(--color-accent);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-button {
+    background-color: var(--color-accent);
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: var(--color-accent-hover);
+}
+
+/* Estilo de botón secundario (para GitHub, etc.) */
+.project-button.secondary {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+.project-button.secondary:hover {
+    background-color: rgba(0, 168, 255, 0.1);
+}
+
+
+/* ======== SECCIÓN DE CONTACTO Y PIE DE PÁGINA ======== */
+.contact-section {
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+}
+
+.contact-section p {
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid #333;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
