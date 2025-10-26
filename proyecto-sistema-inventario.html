@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Sistema de Inventario - Tu Nombre</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">TuNombre.dev</a> <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail-section">
+            
+            <div class="project-detail-header">
+                <h1>Sistema de Control de Inventario</h1>
+                <p class="project-subtitle">Solución backend para la gestión de stock en tiempo real.</p>
+                <a href="index.html#proyectos" class="back-link">&larr; Volver a Proyectos</a>
+            </div>
+
+            <div class="project-detail-image-wrapper">
+                <img src="https://via.placeholder.com/1000x600/333/fff?text=Imagen+Principal+del+Proyecto" alt="Vista previa del Sistema de Inventario">
+            </div>
+
+            <div class="project-detail-content">
+                
+                <div class="project-description-full">
+                    <h2>Descripción General</h2>
+                    <p>
+                        Este proyecto fue desarrollado para resolver el problema de la falta de seguimiento de inventario en un
+                        pequeño almacén. La aplicación permite a los usuarios registrar productos, actualizar cantidades,
+                        y generar reportes de stock bajo.
+                    </p>
+                    <p>
+                        La API REST fue construida con Python y FastAPI, lo que garantiza una alta velocidad de respuesta.
+                        Se utilizó PostgreSQL para la base de datos debido a su fiabilidad y capacidad para manejar
+                        consultas complejas.
+                    </p>
+                    
+                    <h2>Desafíos y Soluciones</h2>
+                    <p>
+                        Uno de los principales desafíos fue asegurar la concurrencia, es decir, evitar que dos usuarios
+                        modificaran la misma cantidad de stock al mismo tiempo. Esto se solucionó implementando
+                        transacciones a nivel de base de datos para asegurar la atomicidad de las operaciones.
+                    </p>
+                </div>
+                
+                <aside class="project-sidebar">
+                    <h3>Tecnologías Utilizadas</h3>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>Pytest</span>
+                    </div>
+
+                    <h3>Enlaces del Proyecto</h3>
+                    <div class="project-links-detail">
+                        <a href="#" target="_blank" class="project-button secondary">
+                            Ver Código en GitHub
+                        </a>
+                        <a href="#" target="_blank" class="project-button">
+                            Ver Demo (si existe)
+                        </a>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div class="project-gallery">
+                <h2>Más Imágenes</h2>
+                <div class="gallery-grid">
+                    <img src="https://via.placeholder.com/600x400/333/fff?text=Screenshot+1" alt="Screenshot 1">
+                    <img src="https://via.placeholder.com/600x400/333/fff?text=Screenshot+2" alt="Screenshot 2">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    </body>
+</html>
