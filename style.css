@@ -424,7 +424,7 @@ section {
 }
 
 /* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 300px) {
     .profile-image-wrapper {
         width: 150px;
         height: 150px;
