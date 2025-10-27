@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de visión artificial para clasificación de productos</title>
+    <title>Artificial Vision System for Product Classification</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
@@ -25,9 +25,9 @@
         <section class="project-detail-section">
             
             <div class="project-detail-header">
-                <h1>Sistema de visión artificial </h1>
-                <p class="project-subtitle">Clasificación de productos para control de calidad</p>
-                <a href="index.html#proyectos" class="back-link">&larr; Volver a Proyectos</a>
+                <h1>Artificial Vision System </h1>
+                <p class="project-subtitle">Quality based product classification</p>
+                <a href="index.html#proyectos" class="back-link">&larr; Back to projects</a>
             </div>
 
             <div class="project-detail-image-wrapper">
@@ -37,7 +37,7 @@
             <div class="project-detail-content">
                 
                 <div class="project-description-full">
-                    <h2>Descripción General</h2>
+                    <h2>General description</h2>
                     <p>
                         A computer vision system with actuators was developed for the automatic classification of products. Its implementation involved segmentation algorithms based on color and shape, using the RGB and HSV models, as well as the image signature and Hu invariant moments for pattern detection.                    </p>
                     <p>
@@ -46,28 +46,62 @@
                         The system incorporated databases for storing templates and results and enabled the automatic generation of Excel reports documenting the characteristics of each analyzed object.                    </p>
                     <p>
                         This project strengthened skills in computer vision, control, data analysis, and multidisciplinary teamwork, resulting in a robust system applicable to industrial automation processes.                    </p>
-                </div>
+                </div>                
                 
                 <aside class="project-sidebar">
-                    <h3>Tecnologías Utilizadas</h3>
+                    <h3>Used Technologies</h3>
                     <div class="project-tags">
                         <span>MATLAB</span>
                         <span>Arduino</span>
                         <span>Artificial vision</span>
                     </div>
 
-                    <h3>Enlaces del Proyecto</h3>
+                    <h3>Project link</h3>
                     <div class="project-links-detail">
                         <a href="https://github.com/Gihofocles/Artificial-Vision" target="_blank" class="project-button secondary">
-                            Ver Código en GitHub
+                            Github repository
                         </a>
                     </div>
                 </aside>
 
+                <div class="project-description-full">
+                    <h2>Detailed description</h2>
+                    <h3>Cálculo y comparación de los momentos de Hu, y filtrado</h3>
+                    <p>
+                        Se realiza el cálculo con la función de Hu_moment y con Parecido, se compara el objeto
+                        actual con las plantillas para de esta forma determinar el porcentaje de similitud y que objetos
+                        es el identificado
+                    </p>
+                    <p>
+                        En el caso de los momentos de Hu, se hace uso de la imagen binaria, y se extraen las propiedades,
+                        como el área, la excentricidad y el perímetro.
+                    </p>
+                    <p>
+                        En la función de parecido se comparar los momentos calculados del objeto fotografiado con los
+                        momentos de las plantillas de referencia, como salida tenemos el vector de los momentos calculados
+                        del objeto detectado, el porcentaje de similitud y el nombre de la plantilla más similar.
+                    </p>    
+                    <p>
+                        En el caso del filtrado y la detección de bordes se hace uso de las operaciones de imclose y bwareopen,
+                        también con bwlabel, se hace el conteo de los productos detectados, en este caso nuestro programa
+                        funciona cuando se detecta un solo pbjeto en el area de trabajo.
+                    </p>
+                    <h3>Integración con actuadores y generación de reportes</h3>
+                    <p>
+                        Se integra el sistema de visión artificial con actuadores controlados por Arduino para separar
+                        físicamente los objetos correctos de los defectuosos. Además, se implementa la generación automática
+                        de reportes en Excel que documentan las características y resultados del análisis de cada objeto.   
+                    </p>
+                </div>
+                
             </div>
+            <div style="text-align: left; margin-top: 20px;">
+                        <img src="SVA/7.jpg" alt="Resultados del análisis" style="width: 40%; border-radius: 10px; text-align: center;" >
+                        <p style="font-style: italic; color: gray;">Ejemplo de Reporte.</p>
+                </div>
 
             <div class="project-gallery">
-                <h2>Más Imágenes</h2>
+                <h2>More images</h2>
                 <div class="gallery-grid">
                     <img src="SVA/1.jpeg" alt="Screenshot 1">
                     <img src="SVA/2.jpeg" alt="Screenshot 1">
@@ -82,7 +116,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Gibran Hernández. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Gibran Hernández. all rights reserved.</p>
     </footer>
 
     </body>
