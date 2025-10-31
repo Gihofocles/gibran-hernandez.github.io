@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Vision System for Product Classification</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Gibran Hernández</a> <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail-section">
+            
+            <div class="project-detail-header">
+                <h1>Vending Machine</h1>
+                <p class="project-subtitle"> 
+                    Using Labview and Arduino
+                </p>
+                <a href="index.html#proyectos" class="back-link">&larr; Back to projects</a>
+            </div>
+
+            <div class="project-detail-image-wrapper">
+                <img src="expendedora.jpg" alt="Vista previa del Sistema de Inventario">
+            </div>
+
+            <div class="project-detail-content">
+                
+                <div class="project-description-full">
+                    <h2>General description</h2>
+                    <p>
+                        This project involves the design and implementation of an automated vending machine system using LabVIEW as the main control interface and Arduino as the hardware controller. 
+                        The system integrates both software and hardware components to simulate the complete operation of a real vending machine.
+                    </p>
+                    <p>
+                        The LabVIEW graphical interface allows the user to select products, display their prices, and monitor system status in real time. 
+                        It communicates with the Arduino microcontroller via serial communication to control the dispensing mechanisms, stepper motors, and to receive input signals from sensors and buttons.
+                    </p>
+                </div>                
+                
+                <aside class="project-sidebar">
+                    <h3>Used Technologies</h3>
+                    <div class="project-tags">
+                        <span>LabView</span>
+                        <span>Arduino</span>
+                        <span>Serial communication</span>
+                        <span>Vendign Machine</span>
+                    </div>
+
+                    <h3>Project link</h3>
+                    <div class="project-links-detail">
+                        <a href="https://github.com/Gihofocles/VendingMachine" target="_blank" class="project-button secondary">
+                            Github repository
+                        </a>
+                    </div>
+                </aside>
+
+                <div class="project-description-full">
+                    <h2>Detailed description</h2>
+                    <p>
+                        The program is structured using a state machine architecture, managing processes such as product selection, payment verification, item dispensing, and inventory updates. 
+                        The interface also provides visual feedback, showing the selected item, remaining balance, and transaction status.
+                    </p>
+                    <p>
+                        Additional features include errors, such as insufficient payment or product unavailability, and expandable functionality for integration with other payment systems or components like LCD displays, LEDs, and buzzers.
+                    </p>
+                    <p>
+                        The system includes a temperature sensor and a cooling fan to ensure that items are stored at safe temperatures. Additional features include error detection, such as insufficient payment or product unavailability, and expandable functionality for integration with other components like LCD displays, LEDs, and buzzers.
+                    </p>
+                    <p>
+                        The application was developed as a standalone executable (.exe), allowing it to run independently of the LabVIEW development environment.
+                    </p>
+                </div>
+                
+            </div>
+            <div style="text-align: left; margin-top: 20px;">
+                        <img src="expendedora/vending_2.jpg" alt="Resultados del análisis" style="width: 50%; border-radius: 10px; text-align: center;" >
+                        <p style="font-style: italic; color: gray;">Block diagram.</p>
+                </div>
+
+            <div class="project-gallery">
+                <h2>More images</h2>
+                <div class="gallery-grid">
+                    <img src="expendedora/vending_1.jpg" alt="Screenshot 1">
+                    <img src="expendedora/vending_3.jpg" alt="Screenshot 1">
+                    <img src="expendedora/vending_4.jpg" alt="Screenshot 1">
+                    <img src="expendedora/vending_5.jpg" alt="Screenshot 1">
+                    <img src="expendedora.jpg" alt="Screenshot 1">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Gibran Hernández. all rights reserved.</p>
+    </footer>
+
+    </body>
+</html>

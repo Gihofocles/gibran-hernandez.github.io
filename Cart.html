@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Development of an Active Suspension</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Gibran Hernández</a> <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail-section">
+            
+            <div class="project-detail-header">
+                <h1>Design and Development of an Active Suspension</h1>
+                <p class="project-subtitle"> 
+                    Using Esp32 and PID
+                </p>
+                <a href="index.html#proyectos" class="back-link">&larr; Back to projects</a>
+            </div>
+
+            <div class="project-detail-image-wrapper">
+                <img src="Cart_portrait.jpg" alt="Vista previa del Sistema de Inventario">
+            </div>
+
+            <div class="project-detail-content">
+                
+                <div class="project-description-full">
+                    <h2>General description</h2>
+                    <p>
+                        As the final project for the Classical Control course, this work integrates most of the theoretical and practical concepts studied throughout the semester. 
+                        The project focuses on the design and implementation of an active suspension system for a miniature vehicle, aiming to analyze the stability, response, and behavior of a controlled dynamic system.
+                    </p>
+                    <p>
+                        The system maintains a fixed distance between the car’s chassis and the ground using servomotors connected to the wheel axles and an ultrasonic sensor that measures the height in real time. 
+                        A PID controller implemented on an ESP32 microcontroller regulates the servomotors to keep the vehicle at the desired height, even when traveling over uneven or irregular surfaces.
+                    </p>
+                    <p>
+                       The main objective is to develop a fully functional and stable suspension system, minimizing oscillations during transient states and maintaining the distance within a user-defined range.
+                    </p>
+                </div>                
+                
+                <aside class="project-sidebar">
+                    <h3>Used Technologies</h3>
+                    <div class="project-tags">
+                        <span>PID controler</span>
+                        <span>ESP32</span>
+                        <span>Ultrasonic sensor</span>
+                        <span>MATLAB</span>
+                        <span>Control</span>
+                        <span>ESP32</span>
+                        <span>CAD design</span>
+                        <span>3d printing</span>
+                        <span>Autodesk Inventor</span>
+                    </div>
+
+                    <h3>Project link</h3>
+                    <div class="project-links-detail">
+                        <a href="https://github.com/Gihofocles/ActiveSuspension" target="_blank" class="project-button secondary">
+                            Github repository
+                        </a>
+                    </div>
+                </aside>
+
+                <div class="project-description-full">
+                    <h2>Detailed description</h2>
+                    <p>
+                        The theoretical development began with the derivation of the transfer function of the suspension system, modeled as a second-order dynamic system. 
+                        This model was used to simulate the system behavior and design the PID controller parameters using the Ziegler–Nichols tuning method, which provided optimal proportional, integral, and derivative gains based on the tangent line of the system’s step response.
+                    </p>
+                    <p>
+                        The simulation and analysis were performed using MATLAB and Simulink, allowing evaluation of the transient response and controller performance. 
+                        The results showed that the system achieved a short response time and negligible overshoot, ensuring a stable and precise control of the vehicle’s height.
+                    </p>
+                    <p>
+                        For the control implementation, the ESP32 was programmed in C++ (Arduino environment) to process the distance measurements and adjust the servomotor positions in real time. 
+                        The algorithm computes the error between the measured and desired distances and applies the PID control law to maintain a stable suspension level.
+                    </p>
+                    <p>
+                        The mechanical assembly included metal joints and screws to reinforce the chassis, while electronic components were connected to the ESP32. 
+                        The control algorithm, programmed in C++ for Arduino, computes the error between the measured and desired distances and updates the servomotor angles accordingly to stabilize the car body.
+                    </p>
+                </div>
+                
+            </div>
+            <div style="text-align: left; margin-top: 20px;">
+                        <img src="Cart_portrait.jpg" alt="Resultados del análisis" style="width: 50%; border-radius: 10px; text-align: center;" >
+                        <p style="font-style: italic; color: gray;">Prototipe.</p>
+                </div>
+
+            <div class="project-gallery">
+                <h2>More images</h2>
+                <div class="gallery-grid">
+                    <img src="expendedora/vending_1.jpg" alt="Screenshot 1">
+                    <img src="expendedora/vending_3.jpg" alt="Screenshot 1">
+                    <img src="expendedora/vending_4.jpg" alt="Screenshot 1">
+                    <img src="expendedora/vending_5.jpg" alt="Screenshot 1">
+                    <img src="expendedora.jpg" alt="Screenshot 1">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Gibran Hernández. all rights reserved.</p>
+    </footer>
+
+    </body>
+</html>
